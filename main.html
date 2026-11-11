@@ -6,10 +6,14 @@
   <title>Food &amp; Favorites</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
+  <script src="clock.js" defer></script>
 </head>
 <body>
   <main class="container">
-    <h1>Food &amp; Favorites</h1>
+    <header>
+      <h1>Food &amp; Favorites</h1>
+      <p class="current-datetime">Current date and time: <time data-current-datetime aria-live="off"></time></p>
+    </header>
     <div id="content"></div>
     <p id="message" aria-live="polite">Your project is ready. Start building here.</p>
     <p><a href="order.html">Open the food ordering page</a></p>

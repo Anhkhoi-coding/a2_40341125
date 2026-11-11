@@ -20,6 +20,12 @@ body {
   margin-bottom: 1.75rem;
 }
 
+.current-datetime {
+  margin-bottom: 1rem;
+  color: #62685f;
+  font-size: 0.95rem;
+}
+
 .back-link {
   color: #416247;
   font-weight: 700;
