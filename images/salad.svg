@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title id="title">Fresh garden salad in a bowl</title>
+  <rect width="640" height="360" fill="#dcebd7"/>
+  <circle cx="320" cy="169" r="137" fill="#eef5e8"/>
+  <path d="M153 167h334c-12 95-76 147-167 147s-155-52-167-147Z" fill="#4e7890"/>
+  <path d="M174 174h292c-14 70-67 112-146 112s-132-42-146-112Z" fill="#f8f2df"/>
+  <g fill="#5b9c57">
+    <ellipse cx="252" cy="162" rx="45" ry="22" transform="rotate(-28 252 162)"/>
+    <ellipse cx="331" cy="151" rx="49" ry="22" transform="rotate(18 331 151)"/>
+    <ellipse cx="387" cy="184" rx="42" ry="20" transform="rotate(-15 387 184)"/>
+    <ellipse cx="286" cy="210" rx="44" ry="20" transform="rotate(12 286 210)"/>
+    <ellipse cx="360" cy="222" rx="38" ry="18" transform="rotate(-20 360 222)"/>
+  </g>
+  <g fill="#e45443">
+    <circle cx="276" cy="150" r="16"/>
+    <circle cx="366" cy="166" r="16"/>
+    <circle cx="328" cy="203" r="16"/>
+  </g>
+  <g fill="#f2ca59">
+    <circle cx="230" cy="190" r="12"/>
+    <circle cx="401" cy="210" r="12"/>
+    <circle cx="319" cy="130" r="12"/>
+  </g>
+</svg>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Ordering</title>
+  <link rel="stylesheet" href="order.css">
+  <script src="order.js" defer></script>
+</head>
+<body>
+  <main class="order-page">
+    <header class="page-header">
+      <a class="back-link" href="main.html">← Back to assignment</a>
+      <p class="eyebrow">Freshly prepared, just for you</p>
+      <h1>Order your favorites</h1>
+      <p>Choose quantities below. Your total updates as you make changes.</p>
+    </header>
+
+    <form id="order-form" novalidate>
+      <div class="menu-card">
+        <div class="menu-heading">
+          <h2>Our menu</h2>
+          <span>Price</span>
+          <span>Quantity</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3>Classic Burger</h3>
+            <p>Grilled beef, cheddar, lettuce, and house sauce</p>
+          </div>
+          <span class="item-price" data-price-cents="1299">$12.99</span>
+          <label class="quantity-label">
+            <span class="visually-hidden">Classic Burger quantity</span>
+            <input name="classic-burger" type="number" min="0" step="1" value="0" required>
+          </label>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3>Margherita Pizza</h3>
+            <p>Tomato, mozzarella, basil, and olive oil</p>
+          </div>
+          <span class="item-price" data-price-cents="1499">$14.99</span>
+          <label class="quantity-label">
+            <span class="visually-hidden">Margherita Pizza quantity</span>
+            <input name="margherita-pizza" type="number" min="0" step="1" value="0" required>
+          </label>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3>Garden Salad</h3>
+            <p>Seasonal greens, cucumber, tomato, and vinaigrette</p>
+          </div>
+          <span class="item-price" data-price-cents="899">$8.99</span>
+          <label class="quantity-label">
+            <span class="visually-hidden">Garden Salad quantity</span>
+            <input name="garden-salad" type="number" min="0" step="1" value="0" required>
+          </label>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3>Chocolate Brownie</h3>
+            <p>Warm chocolate brownie with a crisp top</p>
+          </div>
+          <span class="item-price" data-price-cents="499">$4.99</span>
+          <label class="quantity-label">
+            <span class="visually-hidden">Chocolate Brownie quantity</span>
+            <input name="chocolate-brownie" type="number" min="0" step="1" value="0" required>
+          </label>
+        </div>
+      </div>
+
+      <div class="order-summary">
+        <div class="total-row">
+          <span>Grand total</span>
+          <output id="grand-total">$0.00</output>
+        </div>
+        <p id="order-message" aria-live="polite"></p>
+        <button type="submit">Place Order</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

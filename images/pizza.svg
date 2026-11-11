@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title id="title">Pizza topped with tomato and basil</title>
+  <rect width="640" height="360" fill="#f5d6bd"/>
+  <circle cx="320" cy="180" r="147" fill="#fff7e8"/>
+  <circle cx="320" cy="180" r="127" fill="#bd6137"/>
+  <circle cx="320" cy="180" r="109" fill="#f2c65c"/>
+  <g fill="#d84e3e">
+    <circle cx="320" cy="111" r="20"/>
+    <circle cx="382" cy="151" r="20"/>
+    <circle cx="358" cy="224" r="20"/>
+    <circle cx="276" cy="225" r="20"/>
+    <circle cx="254" cy="153" r="20"/>
+  </g>
+  <g fill="#3e8050">
+    <path d="M294 144c-26-26-9-39 16-21 3 19-4 26-16 21Z"/>
+    <path d="M342 171c-28-13-21-31 9-24 10 16 4 25-9 24Z"/>
+    <path d="M319 206c-7-29 11-35 22-7-7 18-16 18-22 7Z"/>
+    <path d="M280 187c-8-28 10-35 22-7-7 18-16 19-22 7Z"/>
+  </g>
+  <g fill="#fff0b0">
+    <circle cx="320" cy="111" r="6"/>
+    <circle cx="382" cy="151" r="6"/>
+    <circle cx="358" cy="224" r="6"/>
+    <circle cx="276" cy="225" r="6"/>
+    <circle cx="254" cy="153" r="6"/>
+  </g>
+</svg>

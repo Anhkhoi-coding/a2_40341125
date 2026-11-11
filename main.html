@@ -3,15 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Assignment 2</title>
+  <title>Food &amp; Favorites</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
 </head>
 <body>
   <main class="container">
-    <h1>Assignment 2</h1>
+    <h1>Food &amp; Favorites</h1>
+    <div id="content"></div>
     <p id="message" aria-live="polite">Your project is ready. Start building here.</p>
+    <p><a href="order.html">Open the food ordering page</a></p>
     <button type="button" onclick="changeIt()">Change paragraph</button>
+    <section aria-labelledby="slideshow-title">
+      <h2 id="slideshow-title">Food slideshow</h2>
+      <figure class="slideshow">
+        <img id="slideshow-image" src="images/burger.svg" alt="Classic burger with lettuce and cheese">
+        <figcaption id="slideshow-caption" aria-live="polite">Classic burger</figcaption>
+      </figure>
+      <div class="slideshow-controls" aria-label="Slideshow controls">
+        <button id="previous-slide" type="button">Previous</button>
+        <button id="next-slide" type="button">Next</button>
+      </div>
+    </section>
     <section aria-labelledby="array-title">
       <h2 id="array-title">Exercise 2 — Print a JavaScript array</h2>
       <h3>toString()</h3>
@@ -29,7 +42,7 @@
       <pre id="find-max-result"></pre>
       <h3>addOnlyNumbers([4, 5, "3.0 birds", true, "birds2"])</h3>
       <pre id="add-only-numbers-result"></pre>
-      <h3>countVowels("Hello, world!")</h3>
+      <h3>countVowels("Hello, my name is Anh Khoi!")</h3>
       <pre id="count-vowels-result"></pre>
       <h3>reverseWords("See you later")</h3>
       <pre id="reverse-words-result"></pre>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title id="title">Classic burger with lettuce and cheese</title>
+  <rect width="640" height="360" fill="#f3d9a5"/>
+  <circle cx="320" cy="180" r="145" fill="#f8edd5"/>
+  <path d="M168 176c7-62 68-103 152-103s145 41 152 103H168Z" fill="#d88936"/>
+  <path d="M180 172c13-49 61-78 140-78s127 29 140 78H180Z" fill="#f2b951"/>
+  <g fill="#fff0a8">
+    <ellipse cx="273" cy="122" rx="5" ry="3" transform="rotate(-25 273 122)"/>
+    <ellipse cx="322" cy="111" rx="5" ry="3" transform="rotate(18 322 111)"/>
+    <ellipse cx="367" cy="131" rx="5" ry="3" transform="rotate(-15 367 131)"/>
+  </g>
+  <path d="m177 174 31 16 28-17 31 17 29-17 32 17 31-17 31 17 29-17 44 18v15H177Z" fill="#62a85b"/>
+  <path d="m184 202 49-6 34 8 37-6 35 7 37-8 43 7 39-5v28H184Z" fill="#f4c844"/>
+  <path d="M183 226c16-16 40-12 57-4s27-8 47-8 32 10 51 9 31-9 49-8 33 8 49 6 28-7 39 5l-18 25H201Z" fill="#74432c"/>
+  <path d="M177 252h286c-5 24-27 39-55 39H232c-28 0-50-15-55-39Z" fill="#d88936"/>
+  <path d="M206 260h228c-8 13-27 20-48 20H254c-21 0-40-7-48-20Z" fill="#f2b951"/>
+</svg>

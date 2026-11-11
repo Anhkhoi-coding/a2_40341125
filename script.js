@@ -1,4 +1,9 @@
 const mixedArray = ["Math", 67, true, 'D'];
+const slideshowImages = [
+  { src: "images/burger.svg", alt: "Classic burger with lettuce and cheese", caption: "Classic burger" },
+  { src: "images/pizza.svg", alt: "Pizza topped with tomato and basil", caption: "Margherita pizza" },
+  { src: "images/salad.svg", alt: "Fresh garden salad in a bowl", caption: "Garden salad" }
+];
 
 function addNumbers(numbers) {
   return numbers.reduce((sum, number) => sum + number, 0);
@@ -41,6 +46,34 @@ function changeIt() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  const visitorName = prompt("What is your name?");
+  const favoriteFood = prompt("What is your favorite food?");
+  const content = document.getElementById("content");
+  const slideshowImage = document.getElementById("slideshow-image");
+  const slideshowCaption = document.getElementById("slideshow-caption");
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    currentSlide = (index + slideshowImages.length) % slideshowImages.length;
+    const slide = slideshowImages[currentSlide];
+    slideshowImage.src = slide.src;
+    slideshowImage.alt = slide.alt;
+    slideshowCaption.textContent = slide.caption;
+  }
+
+  document.getElementById("previous-slide").addEventListener("click", () => {
+    showSlide(currentSlide - 1);
+  });
+  document.getElementById("next-slide").addEventListener("click", () => {
+    showSlide(currentSlide + 1);
+  });
+
+  if (visitorName !== null && favoriteFood !== null) {
+    content.textContent = `Hello, ${visitorName}! Your favorite food is ${favoriteFood}.`;
+  } else {
+    content.textContent = "You skipped one or both questions.";
+  }
+
   document.getElementById("array-to-string").textContent = mixedArray.toString();
   document.getElementById("array-joined").textContent = mixedArray.join(" & ");
 
