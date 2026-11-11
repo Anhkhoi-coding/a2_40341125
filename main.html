@@ -5,14 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assignment 2</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </head>
 <body>
   <main class="container">
     <h1>Assignment 2</h1>
-    <p>Your project is ready. Start building here.</p>
-    <button id="test-button" type="button">Test JavaScript</button>
-    <p id="message" aria-live="polite"></p>
+    <p id="message" aria-live="polite">Your project is ready. Start building here.</p>
+    <button type="button" onclick="changeIt()">Change paragraph</button>
+    <section aria-labelledby="array-title">
+      <h2 id="array-title">Exercise 2 — Print a JavaScript array</h2>
+      <h3>toString()</h3>
+      <pre id="array-to-string"></pre>
+      <h3>join(" &amp; ")</h3>
+      <pre id="array-joined"></pre>
+      <h3>forEach() — index: value</h3>
+      <pre id="array-indexed"></pre>
+    </section>
+    <section aria-labelledby="functions-title">
+      <h2 id="functions-title">Exercise 3 — Functions in an external file</h2>
+      <h3>addNumbers([1, 2, 3, 4])</h3>
+      <pre id="add-numbers-result"></pre>
+      <h3>findMaxNumber(12, 4, 27, 9)</h3>
+      <pre id="find-max-result"></pre>
+      <h3>addOnlyNumbers([4, 5, "3.0 birds", true, "birds2"])</h3>
+      <pre id="add-only-numbers-result"></pre>
+      <h3>countVowels("Hello, world!")</h3>
+      <pre id="count-vowels-result"></pre>
+      <h3>reverseWords("See you later")</h3>
+      <pre id="reverse-words-result"></pre>
+      <h3>getCurrentDate()</h3>
+      <pre id="current-date-result"></pre>
+    </section>
   </main>
 </body>
 </html>
