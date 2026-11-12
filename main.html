@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Food &amp; Favorites</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" type="text/css">
   <script src="script.js"></script>
   <script src="clock.js" defer></script>
 </head>
@@ -12,7 +12,7 @@
   <main class="container">
     <header>
       <h1>Food &amp; Favorites</h1>
-      <p class="current-datetime">Current date and time: <time data-current-datetime aria-live="off"></time></p>
+      <p class="current-datetime">Current date and time: <time data-current-datetime datetime="2026-11-12T10:29:17-05:00" aria-live="off"></time></p>
     </header>
     <div id="content"></div>
     <p id="message" aria-live="polite">Your project is ready. Start building here.</p>
@@ -24,7 +24,7 @@
         <img id="slideshow-image" src="images/burger.svg" alt="Classic burger with lettuce and cheese">
         <figcaption id="slideshow-caption" aria-live="polite">Classic burger</figcaption>
       </figure>
-      <div class="slideshow-controls" aria-label="Slideshow controls">
+      <div class="slideshow-controls">
         <button id="previous-slide" type="button">Previous</button>
         <button id="next-slide" type="button">Next</button>
       </div>

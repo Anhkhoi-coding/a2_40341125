@@ -46,12 +46,20 @@ function changeIt() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const visitorName = prompt("What is your name?");
-  const favoriteFood = prompt("What is your favorite food?");
   const content = document.getElementById("content");
   const slideshowImage = document.getElementById("slideshow-image");
   const slideshowCaption = document.getElementById("slideshow-caption");
   let currentSlide = 0;
+  let visitorName;
+  let favoriteFood;
+  let promptError;
+
+  try {
+    visitorName = prompt("What is your name?");
+    favoriteFood = prompt("What is your favorite food?");
+  } catch (error) {
+    promptError = error;
+  }
 
   function showSlide(index) {
     currentSlide = (index + slideshowImages.length) % slideshowImages.length;
@@ -68,7 +76,9 @@ document.addEventListener("DOMContentLoaded", () => {
     showSlide(currentSlide + 1);
   });
 
-  if (visitorName !== null && favoriteFood !== null) {
+  if (promptError) {
+    content.textContent = `Unable to show the prompts: ${String(promptError)}`;
+  } else if (visitorName !== null && favoriteFood !== null) {
     content.textContent = `Hello, ${visitorName}! Your favorite food is ${favoriteFood}.`;
   } else {
     content.textContent = "You skipped one or both questions.";
